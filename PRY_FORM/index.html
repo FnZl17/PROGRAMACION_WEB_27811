@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Introduccion a los formularios
+    </title>
+</head>
+<body>  
+    <header>
+        <h1>Formulario para ingresar datos de una personas</h1>
+    </header>
+    <main>
+    <!---->
+        <form action="server.html" method="get">
+
+            <laberl for="apellidos">Ingrese su apellido:</label>
+
+            <input type="text" 
+                    name="apellidos" 
+                    id="apellidos"
+                    placeholder="Ejem Zurita"
+                    maxlength="10"
+                    minlength="2"
+                    required 
+            >
+<br>
+            <label for="nombre">Ingrese su nombre:</label>
+
+            <input type="text" 
+                    name="nombre" 
+                    id="nombre"
+                    placeholder="Ejem Nicolas"
+                    maxlength="10"
+                    minlength="2"
+                    required 
+            >
+            <br>
+            <label for="edad">Ingrese su edad:</label>
+            <input 
+            type="numer" 
+            name="edad" i
+            d="edad" 
+            placeholder="Ejem 30" 
+            min="1" max="120" 
+            required="required"
+            >
+
+            <br>
+            <label for="email">Ingrese su correo    </label>
+            <input 
+            type="email" 
+            name="email" 
+            id="email" 
+            placeholder="Ejem"
+            >
+            <br>
+
+            <label for="fecha">FECHA DE NACIMIENTO</label>
+            <input 
+                type="date" 
+                id="fecha" 
+                name="fecha" 
+                placeholder="01/01/2000"
+                value="2000-01-01"
+                min="2021-12-06"
+                max="2025-12-06"
+            >
+<br>
+            <label for: >Seleccione su sexo:</label>
+            <br>
+            <label for="sexo">HOMBRE</label>
+            <input type ="radio" 
+                   name="sexo" 
+                   id="hombre" 
+                   value="HOMBRE"
+                   checked
+            >
+            <label for="sexo">MUJER</label>
+            <input type ="radio"
+                     name="sexo" 
+                     id="mujer" 
+                     value="MUJER"
+            >
+            <label for="sexo">DESCONOCIDO</label>
+            <input type ="radio"
+                     name="sexo" 
+                     id="DESCONOCIDO" 
+                     value="DESCONOCIDO"
+                     disabled
+            >
+<br>
+            <label for="">Seleccione sus dias de clases de programacion web:</label>
+
+            <label for="lunes">LUNES</label>
+            <input type="checkbox" name="dias[]" id="lunes" value="LUNES">
+            <label for="martes">MARTES</label>
+            <input type="checkbox" name="dias[]" id="martes" value="MARTES">
+            <label for="miercoles">MIERCOLES</label>
+            <input type="checkbox" name="dias[]" id="miercoles" value="MIERCOLES">
+            <label for="jueves">JUEVES</label>
+            <input type="checkbox" name="dias[]" id="jueves" value="JUEVES">
+            <label for="viernes">VIERNES</label>
+            <input type="checkbox" name="dias[]" id="viernes" value="VIERNES">
+<br>
+<br>
+
+            <label for="foto">SUBA SU FOTO DE PERFIL</label>
+            <input 
+                type="file" 
+                name="foto" 
+                id="foto" 
+                accept=".png, .jpg, .jpeg"
+            >
+<br>
+            <label for="color">Seleccione su color favorito:</label>
+            <input 
+                type="color"
+                name="color"
+                id="color"
+                value="#380909"
+            >
+<br>
+            <label for="estatura">Seleccione su estatura:</label>
+            <input 
+                type="range"
+                name="estatura"
+                id="estatura"
+                min="10"
+                max="250"
+                value="25"
+            >
+<br>
+                <label for="cedula">Ingrese su número de cédula:</label>
+                <input type="search"
+                name="cedula"
+                id="cedula"
+                placeholder="Ejem 1723456789"
+                >
+<br> 
+            <label for="password">Ingrese su contraseña:</label>
+            <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="********"
+            >
+<br>
+            <input type="reset" value="Limpiar" id="reset">
+            <input type="submit" value="Enviar datos al servidor" id="submit">
+
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
