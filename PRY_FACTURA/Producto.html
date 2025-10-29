@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        DATOS Producto
+    </title>
+</head>
+<header>
+        <center>
+            <figure>
+                <img src="https://img.freepik.com/vector-premium/diseno-plantilla-logotipo-tienda-computadora-escritorio_316488-1458.jpg" alt="Logo de la Empresa" width="100">
+                <figcaption>Mi Empresa S.A.</figcaption>
+            </figure>
+            <h2>FORMULARIO PRODUCTO</h2>
+        </center>
+    </header>
+<body>
+    <center>
+        <form>
+            <table> 
+                <tr>    
+                    <th>    
+                        <label for="producto">NOMBRE_PRODUCTO: </label>
+                    </th>
+                    <td>
+                        <input 
+                        type="text"
+                        name="producto"
+                        id="producto"
+                        placeholder="Laptop..."
+                        required
+                        >   
+                    </td>
+                </tr>
+                <tr>    
+                    <th>    
+                        <label for="cantidad">CANTIDAD: </label>
+                    </th>
+                    <td>
+                        <input 
+                        type="number"
+                        name="cantidad"
+                        id="cantidad"
+                        placeholder="1"
+                        min="1"
+                        required
+                        >   
+                    </td>
+                </tr>
+                <tr>    
+                    <th>    
+                        <label for="precio">PRECIO_PRODUCTO: </label>
+                    </th>
+                    <td>
+                        <input 
+                        type="number"
+                        name="precio"
+                        id="precio"
+                        placeholder="100"
+                        min="1"
+                        required
+                        >   
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                         <input type="submit" value="Enviar datos al servidor" id="submit">
+                    </th>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+<footer>
+        <center>
+            <p>&copy; 2025 Mi Empresa. Todos los derechos reservados.</p>
+        </center>
+    </footer>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        DATOS CLIENTE
+    </title>
+</head>
+<header>
+        <center>
+            <figure>
+                <img src="https://img.freepik.com/vector-premium/diseno-plantilla-logotipo-tienda-computadora-escritorio_316488-1458.jpg" alt="Logo de la Empresa" width="100">
+                <figcaption>Mi Empresa S.A.</figcaption>
+            </figure>
+            <h2>FORMULARIO CLIENTE</h2>
+        </center>
+    </header>
+<body> 
+    <center>
+            <form action="server.html" method="get">
+            <table>
+                <tr>
+                    <th colspan="2"><label for ="nombre">Nombre: </label></th>
+                    <td>
+                    <input type="text" 
+                    name="nombre" 
+                    id="nombre"
+                    placeholder="Ejem Nicolas"
+                    required 
+                    >
+                    </td>
+                </tr>
+                <tr>
+                <th colspan="2"><label for ="apellido">Apellido: </label></th>
+                    <td> 
+                <input type="text" 
+                    name="apellido" 
+                    id="apellido"
+                    placeholder="..."
+                    required 
+                    >
+                    </td>
+                </tr>
+                <tr>
+                <th colspan="2"><label for ="cedula">Cedula: </label></th>
+                    <td> 
+                <input type="text" 
+                    name="cedula" 
+                    id="cedula"
+                    placeholder="1755605184"
+                    minlength="10"
+                    maxlength="13"
+                    required 
+                    >
+                    </td>
+                </tr>
+                <tr>
+                <th colspan="2"><label for ="direccion">Direccion: </label></th>
+                    <td> 
+                <input type="text" 
+                    name="direccion" 
+                    id="direccion"
+                    placeholder="----"
+                    required 
+            >
+                    </td>
+                </tr>
+                <tr>
+                <th colspan="2"><label for ="email">Email: </label></th>
+                    <td> 
+                    <input type="email" 
+                    name="email" 
+                    id="email"
+                    placeholder="pipippi@edu.com"
+                    required 
+                    >
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                         <input type="submit" value="Enviar datos al servidor" id="submit">
+                    </th>
+                </tr>
+
+            </table>
+            </form>
+        </div>
+
+    </center>
+    
+</body>
+
+<footer>
+        <center>
+            <p>&copy; 2025 Mi Empresa. Todos los derechos reservados.</p>
+        </center>
+    </footer>
+</html>

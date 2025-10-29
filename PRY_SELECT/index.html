@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        SELECT
+    </title>
+</head>
+<body>
+    <header>
+        <h1>SELECT FORMULARIOS</h1>
+    </header>
+    <main>
+        <form action="server.html" method="get">
+        <!---          
+            
+            <fieldset>
+                <label for="Lenguaje_Programacion">Seleccione su lenguaje de programacion favorito</label>
+                <select name="Lenguaje_Programacion" id="Lenguaje_Programacion">
+                    <option value="c_mas_mas">c++</option>
+                    <option value="c_sharp">c #</option>
+                    <option value="java">JAVA</option>
+                    <option value="Python">Python</option>
+                    <option value="html" disabled>h t m l</option>
+                </select>
+                <input type="date">
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <label for="musica_favorita">Seleccione su cancion favorita</label>
+                <select name="musica_favorita[]" id="musica_favorita" multiple required >
+                    <optgroup label="REGUETON">
+                        <option value="LOBBA">Shakira - Lobba</option>
+                        <option value="IMAGINE" selected>Imagine - Jhon Lennon</option>
+                        <option value="TRISTE">El triste - Jose Jose</option>
+                        <option value="ANOCHE">Anoche - Bad Bunny</option>
+                    </optgroup>
+                    <optgroup label="METAL">
+                        <option value="DARKEST_HOUR">Megadeth - In my darkest hour</option>
+                        <option value="MASTER">Metallica - Master of Puppets</option>
+                        <option value="WAIT">Slipknot - Wait n Bleed</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+
+            <br>
+
+            TEXTAREA
+            <label for="FRASE_MOTIVADORA">Ingrese su frase motivadora</label>
+            
+            <textarea name="" id="" cols="100" rows="5">Buenos dias estrellitas</textarea>
+
+            
+
+            <input type="hidden" name="cedula_user" value="17755893103">
+            
+            <button type="submit">ENVIAR AL SERVIDOR</button>
+            <button type="reset">Limpiar</button> 
+        -->
+        <h1>Taller en clases</h1>    
+        <label for="cedula">INGRESE SU NUMERO DE CEDULA: </label>
+            <input 
+            type="number"
+            name="cedula"
+            id="cedula"
+            pattern="[0-9]{10}"
+            placeholder="0123456789"
+            required
+            >
+    <br>
+        <label for="FECHA_NACIMIENTO">FECHA DE NACIMIENTO DEL ESTUDIANTE</label>
+        <input type="date"
+            name="FECHA_NACIMIENTO"
+            id="FECHA_NACIMIENTO"
+            min="2005-01-01"
+            max="2010-12-31"
+            value="2005-06-17"
+            required
+        >
+        <br>
+        <label for="materias">ESCOJA SUS MATERIAS</label>
+        <select name="materias[]" id="materias" multiple required>
+            <option value="PROGRAMACION_WEB">PROGRAMACION_WEB</option>
+            <option value="BASES_DE_DATOS">BASES_DE_DATOS</option>
+            <option value="USABILIDAD">USABILIDAD</option>
+            <option value="ESTRUCTURA_DE_DATOS">ESTRUCTURA DE DATOS</option>
+            <option value="POO">POO</option>
+            <option value="CULTURA_AMBIENTAL" disabled>CULTURA_AMBIENTAL</option>
+            <option value="METODOS" disabled>METODOS NUMERICOS</option>
+        </select>
+        <br>
+        <label for="CV">Suba su hoja de vida: </label>
+        <input type="file"
+        name="CV"
+        id="CV"
+        accept=".pdf"
+        required
+        >
+
+        <br>
+        <label for="ID_BANNER">Generar ID_BANNER</label>
+        <input type="text" 
+        name="ID_BANNER" 
+        id="ID_BANNER"
+        pattern="[A-Z]{3}[0-9]{5}"
+        placeholder="LMU12345"
+        required
+        >
+            
+        <button type="submit">ENVIAR AL SERVIDOR</button>
+        <button type="reset">Limpiar</button>
+        
+    </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
