@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        CSS INTERNO
+    </title>
+    <style>
+        input[type="text"]{
+            margin: 30px;
+        }
+
+        textarea{
+            cursor: help;
+        }
+        select{
+            scroll-behavior: smooth;
+        }
+ 
+   </style>
+</head>
+<body>
+    <h1>CSS INTERNO</h1>
+
+    <form action="" method="get">
+            <label for="nombre">Ingrese su nombre:</label>
+            <input type="text" 
+                    name="nombre" 
+                    id="nombre"
+                    placeholder="Ejem Nicolas"
+                    maxlength="10"
+                    minlength="2"
+            >
+            <br>
+            <label for="FRASE_MOTIVADORA">Ingrese su frase motivadora</label>
+        
+            <textarea name="" id="" cols="100" rows="5">Buenos dias estrellitas</textarea>
+
+            <br>
+    <label for="musica_favorita">Seleccione su cancion favorita</label>
+        <select name="musica_favorita[]" id="musica_favorita" multiple required >            
+            <optgroup label="METAL">
+                        <option value="DARKEST_HOUR">Megadeth - In my darkest hour</option>
+                        <option value="MASTER">Metallica - Master of Puppets</option>
+                        <option value="WAIT">Slipknot - Wait n Bleed</option>
+                        <option value="DARKEST_HOUR">Megadeth - In my darkest hour</option>
+                        <option value="MASTER">Metallica - Master of Puppets</option>
+                        <option value="WAIT">Slipknot - Wait n Bleed</option>
+                        <option value="DARKEST_HOUR">Megadeth - In my darkest hour</option>
+                        <option value="MASTER">Metallica - Master of Puppets</option>
+                        <option value="WAIT">Slipknot - Wait n Bleed</option>                                                
+                    </optgroup>
+        </select>
+    </form>
+</body>
+</html>

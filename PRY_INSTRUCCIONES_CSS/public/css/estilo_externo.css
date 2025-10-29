@@ -1,0 +1,15 @@
+*{
+    color:blue;
+    background-color: burlywood;
+
+}
+ body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ .boton_enviar{
+    color: rgb(221, 204, 204);
+    background-color: cadetblue;
+    border : 0px solid;
+    padding: 20px;
+ }
