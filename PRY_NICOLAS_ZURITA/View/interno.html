@@ -10,15 +10,20 @@
         input[type="text"]{
             margin: 30px;
         }
-
         textarea{
             cursor:grab;
         }
         select{
-            scroll-behavior: smooth;
+            scrollbar-width: none;
         }
- 
-   </style>
+        input[type="checkbox"]{
+            transform: scale(1.5);
+        }
+        input[type ="radio"]{
+            accent-color: red;
+        }
+
+    </style>
 </head>
 <body>
     <h1>CSS INTERNO</h1>
@@ -31,27 +36,67 @@
                     placeholder="Ejem Nicolas"
                     maxlength="10"
                     minlength="2"
+                    style="text-transform: lowercase;"
             >
             <br>
             <label for="FRASE_MOTIVADORA">Ingrese su frase motivadora</label>
         
-            <textarea name="" id="" cols="100" rows="5">Buenos dias estrellitas</textarea>
+            <textarea name="" id="" cols="100" rows="5" style="resize: horizontal;">Buenos dias estrellitas</textarea>
 
             <br>
-    <label for="musica_favorita">Seleccione su cancion favorita</label>
-        <select name="musica_favorita[]" id="musica_favorita" multiple required >            
-            <optgroup label="METAL">
-                        <option value="DARKEST_HOUR">Megadeth - In my darkest hour</option>
-                        <option value="MASTER">Metallica - Master of Puppets</option>
-                        <option value="WAIT">Slipknot - Wait n Bleed</option>
-                        <option value="DARKEST_HOUR">Megadeth - In my darkest hour</option>
-                        <option value="MASTER">Metallica - Master of Puppets</option>
-                        <option value="WAIT">Slipknot - Wait n Bleed</option>
-                        <option value="DARKEST_HOUR">Megadeth - In my darkest hour</option>
-                        <option value="MASTER">Metallica - Master of Puppets</option>
-                        <option value="WAIT">Slipknot - Wait n Bleed</option>                                                
-                    </optgroup>
-        </select>
+            <label for="musica_favorita">Seleccione su cancion favorita</label>
+                <select name="musica_favorita[]" id="musica_favorita" multiple required style="display:block;">            
+                    <optgroup label="METAL">
+                                <option value="DARKEST_HOUR">Megadeth - In my darkest hour</option>
+                                <option value="MASTER">Metallica - Master of Puppets</option>
+                                <option value="WAIT">Slipknot - Wait n Bleed</option>
+                                <option value="VILLIAN">Bad Omens - Like a Villian</option>
+                                <option value="END">Linkin Park - In the end</option>
+                                <option value="RESORT">Papa Roach - Last Resort</option>
+                                <option value="DARKEST_HOUR">Megadeth - In my darkest hour</option>
+                                <option value="MASTER">Metallica - Master of Puppets</option>                                               
+                            </optgroup>
+                </select>
+        <br>        
+        <p>Escoja un equipo de la formula 1</p>
+            <label for="Ferrari">Ferrari</label>
+            <input type="checkbox" id="Ferrari" name="Equiposf1[]" value="Ferrari" style="accent-color: chartreuse;" >
+            <label for="Redbull">Redbull</label>
+            <input type="checkbox" name="Equiposf1[]" value="Redbull" id="Redbull" style="accent-color: chartreuse;">
+            <label for="Mercedes">Mercedes</label>
+            <input type="checkbox" name="Equiposf1[]" id="Mercedes" value="Mercedes" style="accent-color: chartreuse;">
+            <label for="Mclaren">Mclaren</label>
+            <input type="checkbox" name="Equiposf1[]" id="Mclaren" value="Mclaren" style="accent-color: chartreuse;">
+            <label for="Williams">Williams</label>
+            <input type="checkbox" name="Equiposf1[]" id="Williams" value="Williams">
+        <br>
+            <label for: >Seleccione su sexo:</label>
+            <br>
+            <label for="sexo">DESCONOCIDO</label>
+            <input type ="radio"
+                     name="sexo" 
+                     id="DESCONOCIDO" 
+                     value="DESCONOCIDO"
+                     style="outline:2px solid black;"
+            >        
+
+            <label for="sexo">HOMBRE</label>
+            <input type ="radio" 
+                   name="sexo" 
+                   id="hombre" 
+                   value="HOMBRE"
+                   style="outline: 2px solid black;"
+                   checked
+            >
+            <label for="sexo">MUJER</label>
+            <input type ="radio"
+                     name="sexo" 
+                     id="mujer" 
+                     value="MUJER"
+                     style="outline:2px solid black;"
+            >            
+
+
     </form>
 </body>
 </html>
