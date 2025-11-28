@@ -1,0 +1,72 @@
+body{
+    background-color: aqua;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    
+}
+
+.caja-static{
+    position: static;
+    background-color: black;
+    color: aliceblue;
+    margin: 2px 2px 2px 2px;
+    padding: 5px;
+    top: 100px;
+    right: 50px;
+}
+
+.caja-relative{
+    position: relative;
+    background-color: burlywood;
+    margin: auto;
+    padding: 1px;
+    top: 100px;
+
+}
+.contenedor{
+    position: relative;
+    background-color: bisque;
+    
+    height: 200px;
+}
+
+.caja-absolute{
+    position: absolute;
+    background-color: black;
+    color: aliceblue;
+    top: 100px;
+    left:100px;
+}
+
+.caja-fixed{
+    position: fixed;
+    background-color: darkgreen;
+    top: 10px;
+    right: 3px;
+}
+
+.whatsap{
+    position: fixed;
+    box-shadow: 30%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4px;
+    margin: auto;
+    padding: 2px;
+    border-color: black;
+    background-color: blue;
+    border-radius: 30%;
+}
+
+.google-customize{
+    position: fixed;
+    box-shadow: 20%;
+    background-color: blue;
+    color: aliceblue;
+    font-size: large;
+    font-family: 'Gill Sans';
+    bottom: 80px;
+    margin: 2px;
+    right: 20px;
+    padding: 10px;
+    border-radius:25px;
+}
